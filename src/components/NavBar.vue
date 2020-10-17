@@ -17,13 +17,14 @@
       ></v-divider>
 
       <v-toolbar-title class="text white--text">
-            <span >Dynamo Data</span>
+            <span>Dynamo Data</span>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
       <v-toolbar-items class="hidden-sm-and-down">
-
+        <v-btn :to="{ name: 'RegisterUser'}" depressed>Registrar Usuario</v-btn>
+        <v-btn :to="{ name: 'RegisterRol'}" depressed>Registrar Rol</v-btn>
         <v-divider vertical></v-divider>
       </v-toolbar-items>
 
@@ -52,7 +53,7 @@
       <v-divider></v-divider>
       <v-list dense>
         <v-list-item-group >
-        <v-list-item color="#d69c4f">
+        <v-list-item color="#007bff">
           <v-list-item-action>
             <v-icon>mdi-dashboard</v-icon>
           </v-list-item-action>
@@ -60,7 +61,7 @@
             <v-list-item-title>Mi Perfil</v-list-item-title>
           </v-list-item-content>
        </v-list-item>
-       <v-list-item color="#d69c4f">
+       <v-list-item color="#007bff">
           <v-list-item-action>
             <!-- <v-icon>dashboard</v-icon> -->
           </v-list-item-action>
@@ -68,7 +69,7 @@
             <v-list-item-title>Dashboard 1</v-list-item-title>
           </v-list-item-content>
        </v-list-item>
-            <v-list-item color="#d69c4f">
+            <v-list-item color="#007bff">
               <v-list-item-action>
                 <!-- <v-icon>dashboard</v-icon> -->
               </v-list-item-action>
@@ -76,7 +77,7 @@
                 <v-list-item-title>DashBoard 2</v-list-item-title>
               </v-list-item-content>
               </v-list-item>
-        <v-list-item color="#d69c4f">
+        <v-list-item color="#007bff">
           <v-list-item-action>
             <!-- <v-icon>perm_identity</v-icon> -->
           </v-list-item-action>
