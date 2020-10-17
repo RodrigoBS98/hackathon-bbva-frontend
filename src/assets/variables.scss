@@ -1,0 +1,30 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+//PALETA
+$primary-color: #006ec1; //Azul
+$primary-color-transparent: rgba(0, 109, 193, 0.7);
+$secondary-color: #009EE5; //Naranja
+$tertiary-color: #52BCEC; //Gris
+$black-color: #000; // Negro
+$white-color: #fff; //blanco
+//Breakpoints
+$desktop-breakpoint: 1200px;
+$ipad-breakpoint: 992px;
+$tablet-breakpoint: 768px;
+$phone-breakpoint: 576px;
+$sm-phone-breakpoint: 400;
+// Fonts
+$primary-font: 'Raleway',
+'Helvetica',
+'sans-serif';
+$number-font: 'Lato',
+'sans-serif';
+
+a.v-list-item.theme--light {
+    text-decoration: none !important;
+    &:hover {
+        text-decoration: none !important;
+    }
+}
