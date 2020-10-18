@@ -17,7 +17,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
     state: {
         baseURL: 'http://localhost:3200',
-        titleApp: 'Dynamic Data',
+        titleApp: 'DYNAMIC DATA',
+        hashtag: '#HACKATHONBBVA2020',
         authToken: localStorage.getItem('token'),
         iat: localStorage.getItem('iat'),
         navUser: [],
