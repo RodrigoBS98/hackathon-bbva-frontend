@@ -1,25 +1,26 @@
 <template>
-  <v-app>
-    <NavBar></NavBar>
-    <Footer></Footer>
+<v-app>
+    <!--<NavBar></NavBar>
+    <Footer></Footer>-->
     <router-view></router-view>
-  </v-app>
+</v-app>
 </template>
 
 <script>
-import NavBar from './components/NavBar'
-import Footer from './components/Footer'
+import "material-icons/iconfont/material-icons.scss";
+/* import NavBar from './components/NavBar'
+import Footer from './components/Footer' */
 
 export default {
-  name: 'App',
+    name: "App",
 
-  components: {
-    NavBar,
-    Footer,
-  },
+    /* components: {
+        NavBar,
+        Footer,
+      }, */
 
-  data: () => ({
-    //
-  })
-}
+    data: () => ({
+        //
+    }),
+};
 </script>

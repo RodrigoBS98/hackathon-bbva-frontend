@@ -42,7 +42,7 @@
                                 </div>
                             </v-form>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -57,7 +57,9 @@
 
 <script>
 import imgLogin from '@/assets/img/login-bg.jpg'
-import { mapState } from 'vuex'
+import {
+    mapState
+} from 'vuex'
 export default {
     data() {
         return {
@@ -100,11 +102,8 @@ export default {
             document.querySelector('.mp-overlay-loader').classList.add('active-loader');
             console.log(this.loginInfo);
             try {
-                const RES = await this.$auth.loginWith('local', {
-                    data: this.loginInfo,
-                })
-                console.log(RES)
-                console.log(this.$store.state.auth.loggedIn);
+                const RES = await this.$store.dispatch('login', this.loginInfo);
+
                 if (RES.status != 200) {
                     this.messageError = RES.data.message
                     document.querySelector('.mp-overlay-loader').classList.remove('active-loader');
@@ -121,6 +120,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/variables.scss';
+
 .mp-login-page {
     padding: 0;
     margin: 0;

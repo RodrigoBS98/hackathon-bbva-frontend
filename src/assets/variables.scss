@@ -4,7 +4,7 @@
 // $font-size-root: 20px;
 //PALETA
 $primary-color: #006ec1; //Azul
-$primary-color-transparent: rgba(0, 109, 193, 0.7);
+$primary-color-transparent: rgba(0, 109, 193, 0.85);
 $secondary-color: #009EE5; //Naranja
 $tertiary-color: #52BCEC; //Gris
 $black-color: #000; // Negro
@@ -21,7 +21,6 @@ $primary-font: 'Raleway',
 'sans-serif';
 $number-font: 'Lato',
 'sans-serif';
-
 a.v-list-item.theme--light {
     text-decoration: none !important;
     &:hover {
