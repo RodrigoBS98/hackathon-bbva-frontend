@@ -80,7 +80,7 @@ export default {
                     return
                 }
                 const timeToExp = dateExp - new Date().getTime()
-                if (timeToExp > 0 && timeToExp < (60000 * 24)) {
+                if (timeToExp > 0 && timeToExp < (20000 * 24)) {
                     clearInterval(this.interval)
                     await this.$store.dispatch('refreshToken');
                     this.verifyTokenFromLS()
