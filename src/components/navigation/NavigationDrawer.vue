@@ -1,5 +1,5 @@
 <template>
-<v-navigation-drawer class="nav-drawer" style="border-radius: 0 !important; height: 100vh;" v-model="drawer" :color="color" :expand-on-hover="expandOnHover" mobile-breakpoint="800" :mini-variant.sync="mini" :right="right" :permanent="drawer" fixed hide-overlay height="100%">
+<v-navigation-drawer dark class="nav-drawer" style="border-radius: 0 !important; height: 100vh;" v-model="drawer" :color="color" :expand-on-hover="expandOnHover" mobile-breakpoint="800" :mini-variant.sync="mini" :right="right" :permanent="drawer" fixed hide-overlay height="100%">
     <v-list dense nav class="py-0">
         <v-list-item two-line :class="mini && 'px-0'">
             <v-list-item-avatar>
@@ -39,11 +39,11 @@ import {
 export default {
     data() {
         return {
-            color: "#ccc",
+            color: "primary",
             colors: ["primary", "blue", "success", "red", "teal"],
             right: false,
             permanent: true,
-            mini: true,
+            mini: false,
             expandOnHover: false
         };
     },
@@ -91,7 +91,7 @@ export default {
 
 <style lang="scss">
 .nav-drawer {
-    top: 65px !important;
+    top: 91px !important;
     border-top: 1px solid #fff3bf !important;
 
     a {
@@ -101,7 +101,13 @@ export default {
 
 @media screen and (max-width: 959px) {
     .nav-drawer {
-        top: 57px !important;
+        top: 90px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .nav-drawer {
+        top: 70px !important;
     }
 }
 </style>
